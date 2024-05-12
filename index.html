@@ -37,5 +37,24 @@
         </div>
     </div>
 
+
+
+    <script>
+
+        const apiKey = "10fbe0e9ecd7091c06c513853aa1e767";
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=bangalore";
+
+
+        async function chechWeather() {
+            const response = await fectch(apiUrl + '&appid=${}');
+            var data = await response.json();
+            console.log(data);
+        }
+
+
+        chechWeather();
+    </script>
+
+
 </body>
 </html>
